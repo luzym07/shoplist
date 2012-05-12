@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- <1> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:orientation="vertical"
+  android:layout_width="fill_parent">
+
+  <!-- <2> -->
+  <LinearLayout android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+    <!-- <3> -->
+
+    <TextView
+        android:id="@+id/textItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Product"
+        android:textStyle="bold" />
+
+    <!-- <4> -->
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="10 pieces" />
+
+  </LinearLayout>
+
+  <!-- <5> -->
+ <LinearLayout android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+  <TextView
+      android:id="@+id/textUser"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="lukas" />
+  
+  <TextView
+        android:id="@+id/textCreatedAt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="10 minutes ago" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_height="fill_parent"
+  android:layout_width="fill_parent" android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/titleShoplist"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+    </LinearLayout>
+ 
+  <!-- <1> -->
+
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
+
+      <EditText
+          android:id="@+id/editText"
+          android:layout_width="210dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1.24" >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/buttonAdd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.55"
+          android:text="Add" />
+
+  </LinearLayout>
+
+  <ListView android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:id="@+id/listShoplist"
+    android:background="#6000" />
+
+
+</LinearLayout>

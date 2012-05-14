@@ -113,11 +113,12 @@ public class ShopListApplication extends Application implements
     if (this.ss == null) {
       String username = this.prefs.getString("username", "student");
       String password = this.prefs.getString("password", "password" );
+      Log.d(TAG,"username: " + username);
       //String url = this.prefs.getString("url", "http://yamba.marakana.com/api");
       if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(password)){
     	  	SpreadSheetFactory f;
 			//f = SpreadSheetFactory.getInstance(new AndroidAuthenticator(params[0]));//use existing google account
-	        f= SpreadSheetFactory.getInstance("","");
+	        f= SpreadSheetFactory.getInstance(username,password);
 			// Retrieve a list with all spreadsheets with names starting with "World"
 			ArrayList<SpreadSheet> alss;
 			alss = f.getAllSpreadSheets(true, "World", false);

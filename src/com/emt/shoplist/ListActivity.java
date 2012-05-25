@@ -49,6 +49,7 @@ public class ListActivity extends BaseActivity{
             // Perform action on click
             ShopListApplication shopList = (ShopListApplication) getApplication();
             shopList.fetchListUpdates();
+            setupList();
         }
     });
     addButton = (Button) findViewById(R.id.buttonAdd);
@@ -65,6 +66,7 @@ public class ListActivity extends BaseActivity{
 	        values.put(ShopListData.C_UPDATEFLAG, 1);
 	        shopList.getShopListData().insertOrIgnore(values);
 	        editText.setText(null);
+            setupList();
         }
     });
     
